@@ -1,0 +1,20 @@
+<template >
+    <lightning-record-view-form
+    if:true={showFields}
+            record-id={recordId}
+            object-api-name="Movie__c">
+        <div class="slds-box">
+            <img class="card-image" src={imgUrl} />
+            <lightning-output-field field-name="Name">
+            </lightning-output-field>
+            <lightning-output-field field-name="Category__c">
+            </lightning-output-field>
+            <lightning-output-field field-name="Description__c">
+            </lightning-output-field>
+            <lightning-output-field field-name="Release_date__c">
+            </lightning-output-field>
+            <lightning-output-field field-name="Rating__c">
+            </lightning-output-field>
+        </div>
+    </lightning-record-view-form>
+</template>
